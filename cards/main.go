@@ -7,5 +7,4 @@ func main() {
 
 	hand.print()
 	remainingCards.print()
-
 }
