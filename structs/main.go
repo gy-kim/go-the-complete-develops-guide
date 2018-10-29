@@ -23,10 +23,18 @@ func main() {
 		},
 	}
 
-	jimPointer := &jim
-	jimPointer.updateName("jimmy")
+	jim.updateName("jimmy")
 	jim.print()
 }
+
+/* Turn 'address' into 'value' with *address.
+   Turn 'value' into 'address' with &value.
+*/
+
+/*
+Reference Types : slices, maps, channels, pointers, functions
+Value Types : int, float, string, bool, structs
+*/
 
 func (pointerToPerson *person) updateName(newFirstName string) {
 	(*pointerToPerson).firstName = newFirstName
